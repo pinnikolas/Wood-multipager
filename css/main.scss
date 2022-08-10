@@ -1,0 +1,219 @@
+@import 'scss/fonts';
+@import 'scss/variables';
+@import 'scss/reset';
+
+.container {
+  max-width: 1218px;
+  padding: 0 18px;
+  margin: 0px auto;
+}
+
+.title {
+  font-family: $FourFont;
+  font-weight: 500;
+  font-size: 90px;
+  color: $mainColor;
+
+  text-transform: uppercase;
+}
+
+.link {
+  font-family: 'Inter';
+  font-weight: 700;
+  font-size: 30px;
+  color: $mainColor;
+  background-color: $blueColor;
+
+  padding: 11px 70px;
+  border-radius: 42px;
+}
+
+
+// header
+
+.header {
+  padding: 47px 0;
+  background-color: transparent;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  .container-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav {
+    display: flex;
+
+    &__list {
+      display: flex;
+      gap: 57px;
+
+      align-items: center;
+    }
+
+    &__link {
+      font-family: $MainFont;
+      font-weight: 700;
+      font-size: 20px;
+      color: $mainColor;
+
+      &:hover {
+        color: $hoverColor;
+      }
+    }
+  }
+}
+
+// hero
+
+.hero {
+  padding: 218px 0 0;
+  background-image: url('../images/hero/background-1.png');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+
+  .container-hero {
+    display: flex;
+    margin: 0 0 0 auto;
+    padding: 43px 115px 57px 50px;
+
+    background-color: $darkColor;
+    border-radius: 43px 0px 0px 43px;
+    filter: drop-shadow(0px 4px 52px rgba(245, 245, 245, 0.17));
+  }
+
+  &__title {
+    font-family: $FourFont;
+    font-weight: 500;
+    font-size: 90px;
+    line-height: 115.4%;
+    color: $mainColor;
+
+    text-transform: uppercase;
+  }
+
+  &__description {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 39px;
+    color: $secondColor;
+
+    padding: 22px 0 58px;
+    max-width: 333px;
+
+    span {
+      font-weight: 700;
+    }
+  }
+
+  &__images {
+
+    &-right {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 204px;
+    }
+
+    &-left {
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      padding-bottom: 136px;
+      margin-right: 40px;
+    }
+
+  }
+
+  &__images-item {
+    width: 205px;
+    height: 205px;
+
+  }
+}
+
+// materials
+
+.materials {
+  padding-top: 266px;
+
+  &__blocks {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    max-width: 746px;
+    margin-bottom: 125px;
+  }
+
+  &__block {
+    text-align: center;
+  }
+
+  &__block-title {
+    font-family: $FourFont;
+    font-weight: 700;
+    font-size: 30px;
+    color: $mainColor;
+
+    padding: 39px 0 38px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__item {
+    font-family: $FourFont;
+    font-weight: 500;
+    font-size: 30px;
+    color: $mainColor;
+    line-height: 30px;
+
+    text-align: left;
+    list-style-image: url("../images/icons/check.svg");
+  }
+
+  &__item-none {
+    list-style-image: url("../images/icons/none.svg");
+  }
+}
+
+// advantages
+
+.advantages {
+  padding-top: 278px;
+  text-align: center;
+
+  &__title {
+    max-width: 920px;
+  }
+
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    padding: 121px 0;
+  }
+
+  &__text {
+    font-family: $FourFont;
+    font-weight: 500;
+    font-size: 30px;
+    color: $mainColor;
+    max-width: 387px;
+    text-align: start;
+
+    &:not(:last-child) {
+      padding-bottom: 46px;
+    }
+  }
+}

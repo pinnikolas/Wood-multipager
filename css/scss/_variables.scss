@@ -1,0 +1,42 @@
+$MainFont: 'Montserrat';
+$SecondFont: 'Inter';
+$ThirdFont: 'Saira';
+$FourFont: 'KyivType';
+
+$mainColor: #F5F5F5;
+$secondColor: #FFDBBB;
+$hoverColor: #A3B8D7;
+$blueColor: #728BAD;
+$darkColor: #1E0C06;
+
+@mixin breakpoint($point) {
+  @if $point==flg {
+    @media (max-width: 1141px) {
+      @content;
+    }
+  }
+
+  @else if $point==lg {
+    @media (max-width: 993px) {
+      @content;
+    }
+  }
+
+  @else if $point==md {
+    @media (max-width: 769px) {
+      @content;
+    }
+  }
+
+  @else if $point==sm {
+    @media (max-width: 577px) {
+      @content;
+    }
+  }
+
+  @else if $point==xs {
+    @media (max-width: 321px) {
+      @content;
+    }
+  }
+}
