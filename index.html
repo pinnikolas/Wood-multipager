@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Wood</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -83,6 +84,45 @@
               </ul>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section id="work" class="work">
+        <div class="container container-work">
+          <h2 class="work__title title">Our work</h2>
+
+          <div class="work__slider swiper">
+
+            <div class="work__wrapper swiper-wrapper">
+              <div class="work__slide swiper-slide">
+                <div class="work__image-wrapper">
+                  <img src="images/work/slide-1.png" alt="slide-1">
+                </div>
+              </div>
+              <div class="work__slide swiper-slide">
+                <div class="work__image-wrapper">
+                  <img src="images/work/slide-2.png" alt="slide-2">
+                </div>
+              </div>
+              <div class="work__slide swiper-slide">
+                <div class="work__image-wrapper">
+                  <img src="images/work/slide-3.png" alt="slide-3">
+                </div>
+              </div>
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+            <div class="work__button-prev swiper-button-prev">
+              <img src="images/icons/arrow-left.svg" alt="arrow-left">
+            </div>
+            <div class="swiper-button-next work__button-next">
+              <img src="images/icons/arrow-right.svg" alt="arrow-right">
+            </div>
+
+          </div>
+
         </div>
       </section>
 
@@ -167,6 +207,9 @@
       <a href="#" class="footer__text description">Privacy Policy</a>
     </div>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

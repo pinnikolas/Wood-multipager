@@ -198,6 +198,84 @@
   }
 }
 
+// work
+
+.work {
+  padding-top: 258px;
+
+  &__title {
+    padding-bottom: 121px;
+    max-width: 1133px;
+    margin: 0px auto;
+  }
+
+  &__slider {}
+
+  &__wrapper {}
+
+  &__slide {
+    padding-bottom: 52px;
+  }
+
+  &-slide {}
+
+  &__image-wrapper {
+    text-align: center;
+  }
+
+  &-button-next {
+    height: 50px;
+    width: 50px;
+  }
+
+  &-button-prev {
+    height: 50px;
+    width: 50px;
+    right: 0;
+  }
+}
+
+.swiper-button-next {
+  width: 50px;
+  height: 50px;
+  right: 5%;
+}
+
+.swiper-button-prev {
+  width: 50px;
+  height: 50px;
+  left: 5%;
+}
+
+.container-work {
+  max-width: 1440px;
+}
+
+.title {}
+
+.swiper {}
+
+.swiper-wrapper {}
+
+.swiper-slide {}
+
+.swiper-pagination {
+  bottom: 0;
+}
+
+.swiper-pagination-bullet {
+  width: 26px;
+  height: 26px;
+
+  background-color: transparent;
+  border: 4px solid #728BAD;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #D5DCEE;
+}
+
+
 // advantages
 
 .advantages {
@@ -354,6 +432,7 @@
 
   &__text {
     position: relative;
+
     img {
       position: absolute;
       bottom: -50%;
