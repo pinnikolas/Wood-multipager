@@ -59,6 +59,12 @@
   left: 0;
   width: 100%;
 
+  &-active {
+    background: #1E0C06;
+    box-shadow: 0px -8px 52px rgba(238, 238, 238, 0.17);
+    border-radius: 0px 0px 79px 79px;
+  }
+
   .container-header {
     display: flex;
     justify-content: space-between;
@@ -86,6 +92,7 @@
     }
   }
 }
+
 
 // hero
 
@@ -148,6 +155,7 @@
   }
 }
 
+
 // materials
 
 .materials {
@@ -198,10 +206,15 @@
   }
 }
 
+
 // work
 
 .work {
   padding-top: 258px;
+
+  .container-work {
+    max-width: 1440px;
+  }
 
   &__title {
     padding-bottom: 121px;
@@ -209,70 +222,44 @@
     margin: 0px auto;
   }
 
-  &__slider {}
-
-  &__wrapper {}
-
   &__slide {
     padding-bottom: 52px;
   }
-
-  &-slide {}
 
   &__image-wrapper {
     text-align: center;
   }
 
-  &-button-next {
-    height: 50px;
-    width: 50px;
+  .swiper {
+
+    &-button-next {
+      width: 50px;
+      height: 50px;
+      right: 5%;
+    }
+
+    &-button-prev {
+      width: 50px;
+      height: 50px;
+      left: 5%;
+    }
+
+    &-pagination {
+      bottom: 0;
+
+      &-bullet {
+        width: 26px;
+        height: 26px;
+
+        background-color: transparent;
+        border: 4px solid #728BAD;
+
+        &-active {
+          background-color: #D5DCEE;
+        }
+      }
+    }
   }
-
-  &-button-prev {
-    height: 50px;
-    width: 50px;
-    right: 0;
-  }
-}
-
-.swiper-button-next {
-  width: 50px;
-  height: 50px;
-  right: 5%;
-}
-
-.swiper-button-prev {
-  width: 50px;
-  height: 50px;
-  left: 5%;
-}
-
-.container-work {
-  max-width: 1440px;
-}
-
-.title {}
-
-.swiper {}
-
-.swiper-wrapper {}
-
-.swiper-slide {}
-
-.swiper-pagination {
-  bottom: 0;
-}
-
-.swiper-pagination-bullet {
-  width: 26px;
-  height: 26px;
-
-  background-color: transparent;
-  border: 4px solid #728BAD;
-}
-
-.swiper-pagination-bullet-active {
-  background-color: #D5DCEE;
 }
 
 
@@ -305,6 +292,7 @@
     }
   }
 }
+
 
 // about
 
@@ -371,6 +359,7 @@
     }
   }
 }
+
 
 // questions
 
@@ -446,6 +435,7 @@
     max-width: 546px;
   }
 }
+
 
 // footer
 
